@@ -36,7 +36,7 @@ function showResult() {
   update_time.innerHTML = "";
   convert().then((data) => {
     if (input.value) {
-      result_text.innerHTML = `1 ${curr_from.value} equals to ${data.conversion_rate} `;
+      result_text.innerHTML = `1 ${curr_from.value} equals to ${data.conversion_rate} ${curr_to.value} `;
       result.innerHTML =
         data.conversion_rate * input.value + " " + curr_to.value;
       update_time.innerHTML =
